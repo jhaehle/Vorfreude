@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A68B8D591FDE9BFF00F84C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B8D581FDE9BFF00F84C5B /* AppDelegate.swift */; };
-		A68B8D5B1FDE9BFF00F84C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B8D5A1FDE9BFF00F84C5B /* ViewController.swift */; };
-		A68B8D5E1FDE9BFF00F84C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B8D5C1FDE9BFF00F84C5B /* Main.storyboard */; };
 		A68B8D601FDE9BFF00F84C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68B8D5F1FDE9BFF00F84C5B /* Assets.xcassets */; };
 		A68B8D631FDE9BFF00F84C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B8D611FDE9BFF00F84C5B /* LaunchScreen.storyboard */; };
 		A68B8D6E1FDE9BFF00F84C5B /* VorfreudeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B8D6D1FDE9BFF00F84C5B /* VorfreudeTests.swift */; };
 		A68B8D791FDE9BFF00F84C5B /* VorfreudeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B8D781FDE9BFF00F84C5B /* VorfreudeUITests.swift */; };
+		A68B8D8D1FDE9C5400F84C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B8D8C1FDE9C5400F84C5B /* Main.storyboard */; };
+		A68B8D8F1FDE9C5E00F84C5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B8D8E1FDE9C5E00F84C5B /* MainViewController.swift */; };
+		A6B588221FDF0B3F0002CA3C /* Vorfreude.gif in Resources */ = {isa = PBXBuildFile; fileRef = A6B588211FDF0B3F0002CA3C /* Vorfreude.gif */; };
+		A6FC56981FDF1A9500C1B9C7 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC56971FDF1A9500C1B9C7 /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,6 @@
 /* Begin PBXFileReference section */
 		A68B8D551FDE9BFF00F84C5B /* Vorfreude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vorfreude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B8D581FDE9BFF00F84C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A68B8D5A1FDE9BFF00F84C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A68B8D5D1FDE9BFF00F84C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A68B8D5F1FDE9BFF00F84C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68B8D621FDE9BFF00F84C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68B8D641FDE9BFF00F84C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,10 @@
 		A68B8D741FDE9BFF00F84C5B /* VorfreudeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VorfreudeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B8D781FDE9BFF00F84C5B /* VorfreudeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorfreudeUITests.swift; sourceTree = "<group>"; };
 		A68B8D7A1FDE9BFF00F84C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68B8D8C1FDE9C5400F84C5B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A68B8D8E1FDE9C5E00F84C5B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A6B588211FDF0B3F0002CA3C /* Vorfreude.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Vorfreude.gif; sourceTree = "<group>"; };
+		A6FC56971FDF1A9500C1B9C7 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,9 @@
 		A68B8D571FDE9BFF00F84C5B /* Vorfreude */ = {
 			isa = PBXGroup;
 			children = (
-				A68B8D581FDE9BFF00F84C5B /* AppDelegate.swift */,
-				A68B8D5A1FDE9BFF00F84C5B /* ViewController.swift */,
-				A68B8D5C1FDE9BFF00F84C5B /* Main.storyboard */,
-				A68B8D5F1FDE9BFF00F84C5B /* Assets.xcassets */,
-				A68B8D611FDE9BFF00F84C5B /* LaunchScreen.storyboard */,
-				A68B8D641FDE9BFF00F84C5B /* Info.plist */,
+				A6FC56961FDF1A7E00C1B9C7 /* Extension */,
+				A68B8D871FDE9C1500F84C5B /* Module */,
+				A68B8D891FDE9C2C00F84C5B /* Resource */,
 			);
 			path = Vorfreude;
 			sourceTree = "<group>";
@@ -123,6 +124,59 @@
 				A68B8D7A1FDE9BFF00F84C5B /* Info.plist */,
 			);
 			path = VorfreudeUITests;
+			sourceTree = "<group>";
+		};
+		A68B8D871FDE9C1500F84C5B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A68B8D581FDE9BFF00F84C5B /* AppDelegate.swift */,
+				A68B8D881FDE9C1D00F84C5B /* Main */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A68B8D881FDE9C1D00F84C5B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A68B8D8B1FDE9C4700F84C5B /* Storyboard */,
+				A68B8D8A1FDE9C4000F84C5B /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A68B8D891FDE9C2C00F84C5B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A6B588211FDF0B3F0002CA3C /* Vorfreude.gif */,
+				A68B8D5F1FDE9BFF00F84C5B /* Assets.xcassets */,
+				A68B8D611FDE9BFF00F84C5B /* LaunchScreen.storyboard */,
+				A68B8D641FDE9BFF00F84C5B /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A68B8D8A1FDE9C4000F84C5B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A68B8D8E1FDE9C5E00F84C5B /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A68B8D8B1FDE9C4700F84C5B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A68B8D8C1FDE9C5400F84C5B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A6FC56961FDF1A7E00C1B9C7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC56971FDF1A9500C1B9C7 /* DateExtensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +286,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68B8D8D1FDE9C5400F84C5B /* Main.storyboard in Resources */,
 				A68B8D631FDE9BFF00F84C5B /* LaunchScreen.storyboard in Resources */,
 				A68B8D601FDE9BFF00F84C5B /* Assets.xcassets in Resources */,
-				A68B8D5E1FDE9BFF00F84C5B /* Main.storyboard in Resources */,
+				A6B588221FDF0B3F0002CA3C /* Vorfreude.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68B8D5B1FDE9BFF00F84C5B /* ViewController.swift in Sources */,
 				A68B8D591FDE9BFF00F84C5B /* AppDelegate.swift in Sources */,
+				A68B8D8F1FDE9C5E00F84C5B /* MainViewController.swift in Sources */,
+				A6FC56981FDF1A9500C1B9C7 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A68B8D5C1FDE9BFF00F84C5B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A68B8D5D1FDE9BFF00F84C5B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A68B8D611FDE9BFF00F84C5B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -428,9 +476,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GA7VHNLUN;
-				INFOPLIST_FILE = Vorfreude/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vorfreude/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ws.ahmet.vorfreude.Vorfreude;
+				PRODUCT_BUNDLE_IDENTIFIER = ws.ahmet.vorfreude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,9 +492,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GA7VHNLUN;
-				INFOPLIST_FILE = Vorfreude/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vorfreude/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ws.ahmet.vorfreude.Vorfreude;
+				PRODUCT_BUNDLE_IDENTIFIER = ws.ahmet.vorfreude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

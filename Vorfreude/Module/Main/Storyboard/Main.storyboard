@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UDL-AL-2DM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="hYO-09-qA5">
+            <objects>
+                <viewController id="UDL-AL-2DM" customClass="MainViewController" customModule="Vorfreude" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQN-ly-5ql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VORFREUDE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfQ-c8-Y6g">
+                                <rect key="frame" x="40" y="80" width="295" height="60.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="44"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vorfreude.gif" translatesAutoresizingMaskIntoConstraints="NO" id="IRl-ns-BSH">
+                                <rect key="frame" x="20" y="396" width="335" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IRl-ns-BSH" secondAttribute="height" multiplier="4:3" id="R4g-xE-9pa"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vqr-5V-3uf">
+                                <rect key="frame" x="40" y="180.5" width="295" height="175.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nur noch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58N-tn-Sq5">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="58.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{x} Tage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-iS-yUu">
+                                        <rect key="frame" x="0.0" y="58.5" width="295" height="58.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7G-WH-VCv">
+                                        <rect key="frame" x="0.0" y="117" width="295" height="58.5"/>
+                                        <string key="text">bis Weihnachten! 
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcy-wF-6UG" firstAttribute="bottom" secondItem="IRl-ns-BSH" secondAttribute="bottom" constant="20" id="23g-fE-Pfk"/>
+                            <constraint firstItem="Vqr-5V-3uf" firstAttribute="top" secondItem="LfQ-c8-Y6g" secondAttribute="bottom" constant="40" id="2y2-7M-2TT"/>
+                            <constraint firstItem="IRl-ns-BSH" firstAttribute="top" secondItem="Vqr-5V-3uf" secondAttribute="bottom" constant="40" id="Cai-Wx-vJB"/>
+                            <constraint firstItem="LfQ-c8-Y6g" firstAttribute="top" secondItem="tcy-wF-6UG" secondAttribute="top" constant="60" id="P6O-eS-Fzj"/>
+                            <constraint firstItem="Vqr-5V-3uf" firstAttribute="leading" secondItem="LfQ-c8-Y6g" secondAttribute="leading" id="QEO-bA-u8f"/>
+                            <constraint firstItem="Vqr-5V-3uf" firstAttribute="trailing" secondItem="LfQ-c8-Y6g" secondAttribute="trailing" id="Y9g-0Z-HmX"/>
+                            <constraint firstItem="IRl-ns-BSH" firstAttribute="leading" secondItem="tcy-wF-6UG" secondAttribute="leading" constant="20" id="YyZ-GY-Q5y"/>
+                            <constraint firstItem="LfQ-c8-Y6g" firstAttribute="leading" secondItem="tcy-wF-6UG" secondAttribute="leading" constant="40" id="ZAq-mO-dPo"/>
+                            <constraint firstItem="tcy-wF-6UG" firstAttribute="trailing" secondItem="IRl-ns-BSH" secondAttribute="trailing" constant="20" id="blG-98-YkQ"/>
+                            <constraint firstItem="tcy-wF-6UG" firstAttribute="trailing" secondItem="LfQ-c8-Y6g" secondAttribute="trailing" constant="40" id="z7f-T7-wSG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tcy-wF-6UG"/>
+                    </view>
+                    <connections>
+                        <outlet property="remainingTimeLabel" destination="wdb-iS-yUu" id="F7c-gg-Cyh"/>
+                        <outlet property="santaGifView" destination="IRl-ns-BSH" id="inx-bq-iAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRy-Tg-Uce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Vorfreude.gif" width="800" height="600"/>
+    </resources>
+</document>
