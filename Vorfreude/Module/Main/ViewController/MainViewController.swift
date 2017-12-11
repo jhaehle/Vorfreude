@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Gifu
 
 class MainViewController: UIViewController {
 
     @IBOutlet weak var remainingTimeLabel: UILabel!
-    @IBOutlet weak var santaGifView: UIImageView!
+    @IBOutlet weak var santaGifView: GIFImageView!
     
     // MARK: - Life Cycle
 
@@ -19,10 +20,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         prepareUI()
-        
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(gifTapped(tapGestureRecognizer:)))
-        santaGifView.isUserInteractionEnabled = true
-        santaGifView.addGestureRecognizer(gesture)
+        prepareGif()
     }
     
     // MARK: - Prepare
@@ -44,6 +42,14 @@ class MainViewController: UIViewController {
         remainingTimeLabel.text = "\(days) Tage"
     }
     
+    func prepareGif() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(gifTapped(tapGestureRecognizer:)))
+        santaGifView.isUserInteractionEnabled = true
+        santaGifView.addGestureRecognizer(gesture)
+        
+        santaGifView.prepareForAnimation(withGIFNamed: "Vorfreude")
+    }
+    
     // MARK: - Calculations
     
     func calculateDays(from: Date, to date: Date) -> Int {
@@ -62,5 +68,10 @@ class MainViewController: UIViewController {
     
     @objc func gifTapped(tapGestureRecognizer: UITapGestureRecognizer) {
 
+        if santaGifView.isAnimatingGIF {
+            santaGifView.stopAnimatingGIF()
+        }
+        
+        santaGifView.startAnimatingGIF()
     }
 }
